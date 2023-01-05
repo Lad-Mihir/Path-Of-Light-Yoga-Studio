@@ -1,0 +1,182 @@
+/*configuring the style for the page*/
+* {
+    box-sizing: border-box;
+ }
+body {
+    background-color:  #3F2860;
+    color: #40407A;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+}
+/*style for id selector*/
+#wrapper {
+    background-color: #F5F5F5;
+    padding: 2em;
+}
+header {
+    background-color:#40407A;
+    background-image: url("sunrise.jpg");
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    margin-top: 50px;
+    font-size: 90%;
+    min-height: 200px;
+}
+header a {
+    text-decoration: none;
+}
+header a:link,  header a:visited {
+    color: #FFFFFF;
+}
+header a:hover {
+    color: #EDF5F5;
+}
+nav {
+    padding: 1em;
+    width: 100%;
+    padding-top: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: right;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding-right: 0;
+    z-index: 9999;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    font-size: 1.2em;
+}
+nav li {
+    width: 40%;
+    padding: 0 1em o 1em;
+    display: inline; 
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    width: 120px;
+}
+nav a:link {
+    color: #3F2860;
+}
+nav a:visited {
+    color: #497777;
+}
+nav a:hover {
+    color: #A26100;
+}
+/*style for class selector*/
+.studio {
+    font-style: italic;
+}
+footer {
+    font-size: 0.60em;
+    font-style: italic;
+    text-align: center;
+}
+#home, #selector {
+    height: 20vh;
+    padding-top: 2em;
+    padding-left: 10%;
+}
+#mathero {
+    background-image: url("yogamat.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    display: none;
+}
+#loungehero {
+    background-image: url("yogalounge.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    display: none;
+}
+section {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+#mobile {
+    display: inline;
+}
+#desktop {
+    display: none;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border: 1px solid #3F2860;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+th, td {
+    padding: 5px;
+    border: 1px solid #3F2860;
+}
+tr:nth-child(even) {
+    background-color: #DBE8E9;
+}
+caption {
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+div {
+    padding: 0.5em;
+}
+/*style break for the screen width of min 600px*/
+@media only screen and (min-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-flow:nowrap;
+        justify-content: flex-end;
+    }
+    nav li {
+        width: 7em;
+    }
+    section {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #mathero, #loungehero {
+        display: block;
+        padding-bottom: 1em;
+    }
+    #flow {
+        display: flex;
+        flex-direction: row;
+    }
+    #mobile {
+        display: none;
+    }
+    #desktop {
+        display: inline;
+    }
+}
+/*style break for the screen width 1024px*/
+@media only screen and (min-width: 1024px) {
+    header {
+        font-size: 120%;
+    }
+    #home {
+        height: 50vh;
+        padding-top: 5em;
+        padding-left: 8em;
+    }
+    #contant {
+        height: 30vh;
+        padding-top: 1em;
+        padding-left: 8em;
+    }
+    #wrapper {
+        margin: auto;
+        width: 80%;
+    }
+}
